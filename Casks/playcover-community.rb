@@ -8,7 +8,7 @@ cask "playcover-community" do
   homepage "https://github.com/PlayCover/PlayCover"
 
   depends_on arch: :arm64
-  depends_on macos: :monterey
+  depends_on macos: ">= :monterey"
 
   app "PlayCover.app"
 
