@@ -2,6 +2,13 @@
 
 Homebrew cask for PlayCover
 
+## Casks
+```
+playcover-community
+playcover-prerelease
+playcover-nightly
+```
+
 ## Installing
 
 ```
