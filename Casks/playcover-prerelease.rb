@@ -6,7 +6,12 @@ cask "playcover-prerelease" do
   name "PlayCover"
   desc "Sideload iOS apps and games"
   homepage "https://github.com/PlayCover/PlayCover"
-
+  
+  livecheck do
+    url :url
+    strategy :GithubLatest
+  end
+  
   auto_updates true
   depends_on arch: :arm64
   depends_on macos: ">= :monterey"
