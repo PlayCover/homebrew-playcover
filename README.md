@@ -9,6 +9,11 @@ playcover-prerelease
 playcover-nightly
 ```
 
+## Formulae
+```
+inject
+```
+
 ## Installing
 
 ```
