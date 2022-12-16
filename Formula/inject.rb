@@ -5,8 +5,6 @@ class Inject < Formula
   sha256 "86af4d2856e0ea37f80007b4ea7b2b8ec5edb542f872141f4de4d780c7808d30"
   license "GPL-3.0-only"
 
-  depends_on xcode: [">= 12", :build]
-
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release"
     bin.install ".build/release/inject"
