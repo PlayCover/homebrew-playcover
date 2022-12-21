@@ -9,6 +9,7 @@ playcover-prerelease
 playcover-nightly
 
 ipa-source-generator
+sideloadly
 ```
 
 ## Formulae
