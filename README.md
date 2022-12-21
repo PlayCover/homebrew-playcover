@@ -7,6 +7,8 @@ Homebrew cask for PlayCover
 playcover-community
 playcover-prerelease
 playcover-nightly
+
+ipa-source-generator
 ```
 
 ## Formulae
