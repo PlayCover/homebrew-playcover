@@ -2,7 +2,7 @@ cask "playcover-nightly" do
   version :latest
   sha256 :no_check
 
-  url "https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop?status=completed" do |page|
+  url "https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop" do |page|
     page[/href="([^"]+\.dmg.zip)"/, 1]
   end
   name "PlayCover"
