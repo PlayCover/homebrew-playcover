@@ -1,6 +1,6 @@
 # homebrew-playcover
 
-Homebrew cask for PlayCover
+Homebrew tap for PlayCover and related tools.
 
 ## Casks
 ```
