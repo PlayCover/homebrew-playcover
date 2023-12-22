@@ -1,6 +1,6 @@
 cask "playcover-prerelease" do
-  version "2.0.0-beta.1"
-  sha256 "cd4ac2a53140c0034eeb50e62b335f1729639cbeaf43f7228c976d4d9aee7ab8"
+  version "3.0.0-beta.2"
+  sha256 "48a57cecc3a3c7e9af69e795706af3b9c729e46a6eea2e363eaa8628c5f12791"
 
   url "https://github.com/PlayCover/PlayCover/releases/download/#{version}/PlayCover_#{version}.dmg"
   name "PlayCover"
