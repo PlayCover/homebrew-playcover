@@ -15,6 +15,7 @@ sideloadly
 ## Formulae
 ```
 inject
+playmap
 ```
 
 ## Installing
