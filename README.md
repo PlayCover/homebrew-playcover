@@ -2,6 +2,12 @@
 
 Homebrew tap for PlayCover and related tools.
 
+PlayCover releases are now available on Homebrew. Install using
+
+```
+brew install --cask playcover-community
+```
+
 ## Casks
 ```
 playcover-community
@@ -22,12 +28,12 @@ playmap
 
 ```
 brew tap playcover/playcover
-brew install --cask playcover-community
+brew install --cask playcover-nightly
 ```
 
 ## Uninstalling
 
 ```
-brew uninstall --cask playcover-community
+brew uninstall --cask playcover-nightly
 brew untap playcover/playcover
 ```
