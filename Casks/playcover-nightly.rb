@@ -1,14 +1,22 @@
+class NightlyLinkDownloadStrategy < CurlDownloadStrategy
+  def fetch(timeout: nil)
+    @page_url ||= @url
+    page = curl_output("--location", "--fail", @page_url, timeout: timeout).stdout
+    @url = page[/href="([^"]+\.dmg\.zip)"/, 1]
+    super
+  end
+end
+
 cask "playcover-nightly" do
   version :latest
   sha256 :no_check
 
-  url "https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop" do |page|
-    page[/href="([^"]+\.dmg.zip)"/, 1]
-  end
+  url "https://nightly.link/playcover/playcover/workflows/2.nightly_release/develop",
+      using: NightlyLinkDownloadStrategy
   name "PlayCover"
   desc "Sideload iOS apps and games"
   homepage "https://github.com/PlayCover/PlayCover"
-  
+
   auto_updates true
   conflicts_with cask: "playcover-community"
   depends_on arch: :arm64
